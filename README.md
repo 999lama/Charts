@@ -9,4 +9,4 @@
 
 Example with the set of modifiers that works with a line chart with the ability to change them  
 
-![simulator_screenshot_92A0A6CB-F6EB-4039-99CF-7B0A050DD508](https://github.com/999lama/Charts/assets/71217614/cde99ad2-958f-4f68-bc83-e4ce1330732c)
+![simulator_screenshot_F796BE2B-F65C-4ED2-8478-2F60430AD0DF](https://github.com/999lama/Charts/assets/71217614/cecebad8-10f0-4a3e-b275-7e41c0a6becc)
