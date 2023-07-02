@@ -1,5 +1,5 @@
 //
-//  LineMarkView.swift
+//  LineChartView.swift
 //  ChartProject
 //
 //  Created by Lama Albadri on 02/07/2023.
@@ -15,7 +15,7 @@ struct TitleView: View {
             .padding(.horizontal, 5)
     }
 }
-struct LineMarkView: View {
+struct LineChartView: View {
     
     //MARK: - properties
     let chart: ChartModel
@@ -135,6 +135,6 @@ struct LineMarkView: View {
 
 struct LineMark_Previews: PreviewProvider {
     static var previews: some View {
-        LineMarkView(chart: ChartModel.data.first(where: {$0.chartType == .lineChart})!)
+        LineChartView(chart: ChartModel.data.first(where: {$0.chartType == .lineChart})!)
     }
 }

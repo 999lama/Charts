@@ -23,7 +23,7 @@ struct MainScreenView: View {
             HStack {
                 List(data, id: \.self) { item in
                     
-                    NavigationLink(destination: ChartView(chart: item)) {
+                    NavigationLink(destination: ChartDetailsView(chart: item)) {
                         ChartRow(chart: item)
                     }
                     

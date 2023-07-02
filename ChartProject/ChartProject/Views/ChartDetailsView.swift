@@ -1,5 +1,5 @@
 //
-//  ChartView.swift
+//  ChartDetailsView.swift
 //  ChartProject
 //
 //  Created by Lama Albadri on 02/07/2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ChartView: View {
+struct ChartDetailsView: View {
     let chart: ChartModel
     
     var body: some View {
@@ -15,7 +15,7 @@ struct ChartView: View {
             RadialGradient(colors: [.cyan, .purple, .indigo], center: .center, startRadius: 0, endRadius: 250).ignoresSafeArea()
             switch chart.chartType {
             case .lineChart:
-                LineMarkView(chart: chart)
+                LineChartView(chart: chart)
             default:
                 Text("no chart yet").foregroundColor(.white)
             }
@@ -25,6 +25,6 @@ struct ChartView: View {
 
 struct ChartView_Previews: PreviewProvider {
     static var previews: some View {
-        ChartView(chart: ChartModel.data.first!)
+        ChartDetailsView(chart: ChartModel.data.first!)
     }
 }
