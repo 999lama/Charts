@@ -8,6 +8,6 @@
 
 Example with the set of modifiers that works with a line chart with the ability to change them  
 
-<img src="![simulator_screenshot_92A0A6CB-F6EB-4039-99CF-7B0A050DD508](https://github.com/999lama/Charts/assets/71217614/cde99ad2-958f-4f68-bc83-e4ce1330732c)" width="200" height="400" />
+<img src="(https://github.com/999lama/Charts/assets/71217614/cde99ad2-958f-4f68-bc83-e4ce1330732c)" width="200" height="400" />
 
 ![simulator_screenshot_92A0A6CB-F6EB-4039-99CF-7B0A050DD508](https://github.com/999lama/Charts/assets/71217614/cde99ad2-958f-4f68-bc83-e4ce1330732c)
