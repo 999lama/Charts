@@ -11,8 +11,11 @@
 		CEC1D1AE2A51B5FB00B1107C /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1AD2A51B5FB00B1107C /* MainScreenView.swift */; };
 		CEC1D1B02A51B5FD00B1107C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC1D1AF2A51B5FD00B1107C /* Assets.xcassets */; };
 		CEC1D1B32A51B5FD00B1107C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC1D1B22A51B5FD00B1107C /* Preview Assets.xcassets */; };
-		CEC1D1BA2A51B64100B1107C /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1B92A51B64100B1107C /* Chart.swift */; };
+		CEC1D1BA2A51B64100B1107C /* ChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1B92A51B64100B1107C /* ChartModel.swift */; };
 		CEC1D1BC2A51D27D00B1107C /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1BB2A51D27D00B1107C /* ChartView.swift */; };
+		CEC1D1BE2A51D76C00B1107C /* LineMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1BD2A51D76C00B1107C /* LineMarkView.swift */; };
+		CEC1D1C02A51D7AE00B1107C /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1BF2A51D7AE00B1107C /* Workout.swift */; };
+		CEC1D1C22A51DA0500B1107C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1C12A51DA0500B1107C /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +24,11 @@
 		CEC1D1AD2A51B5FB00B1107C /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
 		CEC1D1AF2A51B5FD00B1107C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEC1D1B22A51B5FD00B1107C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CEC1D1B92A51B64100B1107C /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
+		CEC1D1B92A51B64100B1107C /* ChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartModel.swift; sourceTree = "<group>"; };
 		CEC1D1BB2A51D27D00B1107C /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		CEC1D1BD2A51D76C00B1107C /* LineMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineMarkView.swift; sourceTree = "<group>"; };
+		CEC1D1BF2A51D7AE00B1107C /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		CEC1D1C12A51DA0500B1107C /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +64,10 @@
 				CEC1D1AB2A51B5FB00B1107C /* ChartProjectApp.swift */,
 				CEC1D1AD2A51B5FB00B1107C /* MainScreenView.swift */,
 				CEC1D1BB2A51D27D00B1107C /* ChartView.swift */,
-				CEC1D1B92A51B64100B1107C /* Chart.swift */,
+				CEC1D1BD2A51D76C00B1107C /* LineMarkView.swift */,
+				CEC1D1BF2A51D7AE00B1107C /* Workout.swift */,
+				CEC1D1B92A51B64100B1107C /* ChartModel.swift */,
+				CEC1D1C12A51DA0500B1107C /* Constant.swift */,
 				CEC1D1AF2A51B5FD00B1107C /* Assets.xcassets */,
 				CEC1D1B12A51B5FD00B1107C /* Preview Content */,
 			);
@@ -143,10 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC1D1C22A51DA0500B1107C /* Constant.swift in Sources */,
 				CEC1D1AE2A51B5FB00B1107C /* MainScreenView.swift in Sources */,
 				CEC1D1AC2A51B5FB00B1107C /* ChartProjectApp.swift in Sources */,
-				CEC1D1BA2A51B64100B1107C /* Chart.swift in Sources */,
+				CEC1D1BA2A51B64100B1107C /* ChartModel.swift in Sources */,
 				CEC1D1BC2A51D27D00B1107C /* ChartView.swift in Sources */,
+				CEC1D1BE2A51D76C00B1107C /* LineMarkView.swift in Sources */,
+				CEC1D1C02A51D7AE00B1107C /* Workout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

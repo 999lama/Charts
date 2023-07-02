@@ -10,7 +10,7 @@ import SwiftUI
 @available (iOS 16.0, *)
 struct MainScreenView: View {
     
-    @State private var data: [Chart] = Chart.data
+    @State private var data: [ChartModel] = ChartModel.data
     
     init() {
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
@@ -45,9 +45,8 @@ struct MainScreenView: View {
                     RadialGradient(colors: [.cyan, .purple, .indigo], center: .center, startRadius: 0, endRadius: 250).ignoresSafeArea()
                     
                         .navigationTitle("Swift Charts")
-                    
                 }
-        }
+        }.accentColor(.white)
     }
 }
 
@@ -55,7 +54,7 @@ struct MainScreenView: View {
 
 
 struct ChartRow: View {
-    let chart: Chart
+    let chart: ChartModel
     
     var body: some View {
         HStack {

@@ -8,16 +8,23 @@
 import SwiftUI
 
 struct ChartView: View {
-    let chart: Chart
+    let chart: ChartModel
+    
     var body: some View {
-        VStack {
-            Text(chart.name)
+        ZStack {
+            RadialGradient(colors: [.cyan, .purple, .indigo], center: .center, startRadius: 0, endRadius: 250).ignoresSafeArea()
+            switch chart.chartType {
+            case .lineChart:
+                LineMarkView(chart: chart)
+            default:
+                Text("no chart yet").foregroundColor(.white)
+            }
         }
     }
 }
 
 struct ChartView_Previews: PreviewProvider {
     static var previews: some View {
-        ChartView(chart: Chart.data.first!)
+        ChartView(chart: ChartModel.data.first!)
     }
 }
