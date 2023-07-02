@@ -16,6 +16,9 @@
 		CEC1D1BE2A51D76C00B1107C /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1BD2A51D76C00B1107C /* LineChartView.swift */; };
 		CEC1D1C02A51D7AE00B1107C /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1BF2A51D7AE00B1107C /* Workout.swift */; };
 		CEC1D1C22A51DA0500B1107C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1C12A51DA0500B1107C /* Constant.swift */; };
+		CEC1D1CB2A520C5100B1107C /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1CA2A520C5100B1107C /* BarChart.swift */; };
+		CEC1D1CE2A520CC400B1107C /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1CD2A520CC400B1107C /* TitleView.swift */; };
+		CEC1D1D02A520CDF00B1107C /* SubtitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1CF2A520CDF00B1107C /* SubtitleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		CEC1D1BD2A51D76C00B1107C /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 		CEC1D1BF2A51D7AE00B1107C /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		CEC1D1C12A51DA0500B1107C /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		CEC1D1CA2A520C5100B1107C /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
+		CEC1D1CD2A520CC400B1107C /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		CEC1D1CF2A520CDF00B1107C /* SubtitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,12 @@
 		CEC1D1C72A520B2800B1107C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CEC1D1C92A520C3E00B1107C /* BarChart */,
 				CEC1D1AD2A51B5FB00B1107C /* MainScreenView.swift */,
 				CEC1D1BB2A51D27D00B1107C /* ChartDetailsView.swift */,
 				CEC1D1C82A520B4000B1107C /* LineChart */,
+				CEC1D1CD2A520CC400B1107C /* TitleView.swift */,
+				CEC1D1CF2A520CDF00B1107C /* SubtitleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -112,6 +121,14 @@
 				CEC1D1BD2A51D76C00B1107C /* LineChartView.swift */,
 			);
 			path = LineChart;
+			sourceTree = "<group>";
+		};
+		CEC1D1C92A520C3E00B1107C /* BarChart */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1D1CA2A520C5100B1107C /* BarChart.swift */,
+			);
+			path = BarChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,10 +201,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC1D1CB2A520C5100B1107C /* BarChart.swift in Sources */,
 				CEC1D1C22A51DA0500B1107C /* Constant.swift in Sources */,
 				CEC1D1AE2A51B5FB00B1107C /* MainScreenView.swift in Sources */,
 				CEC1D1AC2A51B5FB00B1107C /* ChartProjectApp.swift in Sources */,
 				CEC1D1BA2A51B64100B1107C /* ChartModel.swift in Sources */,
+				CEC1D1CE2A520CC400B1107C /* TitleView.swift in Sources */,
+				CEC1D1D02A520CDF00B1107C /* SubtitleView.swift in Sources */,
 				CEC1D1BC2A51D27D00B1107C /* ChartDetailsView.swift in Sources */,
 				CEC1D1BE2A51D76C00B1107C /* LineChartView.swift in Sources */,
 				CEC1D1C02A51D7AE00B1107C /* Workout.swift in Sources */,

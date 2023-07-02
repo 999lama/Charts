@@ -8,13 +8,6 @@
 import SwiftUI
 import Charts
 
-struct TitleView: View {
-    let title: String
-    var body: some View {
-        Text(title).foregroundColor(.white).font(.system(size: 15).bold())
-            .padding(.horizontal, 5)
-    }
-}
 struct LineChartView: View {
     
     //MARK: - properties
@@ -34,15 +27,12 @@ struct LineChartView: View {
     var body: some View {
         ZStack {
             VStack {
-                Text(chart.name)
-                    .font(.largeTitle)
-                    .foregroundColor(.white)
-                    .bold()
-                    .shadow(radius: 5)
-                    .padding(.bottom, 10)
+                
+                TitleView(title: chart.name)
+
                 
                 VStack(alignment: .leading, spacing: 15) {
-                    TitleView(title: "Choose bar color")
+                    SubtitleView(title: "Choose bar color")
                     Picker("Choose bar color", selection: $selectedColor) {
                         ForEach(Constant.charBarColors, id: \.self) { color in
                             Text(color.name)
@@ -50,7 +40,7 @@ struct LineChartView: View {
                     }.pickerStyle(.segmented)
                     
                     VStack(alignment: .leading, spacing: 5) {
-                        TitleView(title: "Pick the interpolation Method")
+                        SubtitleView(title: "Pick the interpolation Method")
                         Picker("Choose interpolation Method", selection: $selectedInterpolationMethod) {
                             ForEach(Constant.chartInterpolationMethod, id: \.self) { interpolationMethod in
                                 Text(interpolationMethod.name)
@@ -59,7 +49,7 @@ struct LineChartView: View {
                     }.padding(.horizontal, 5)
                     
                     VStack(alignment: .leading, spacing: 5) {
-                        TitleView(title: "Pick the line cap type")
+                        SubtitleView(title: "Pick the line cap type")
                         Picker("Choose line cap type", selection: $selectedLineCap) {
                             ForEach(Constant.lineCapTypes, id: \.self) { lineCap  in
                                 Text(lineCap.name)
@@ -68,7 +58,7 @@ struct LineChartView: View {
                     }.padding(.horizontal, 5)
                     
                     VStack(alignment: .leading, spacing: 5) {
-                        TitleView(title: "Pick the line join type")
+                        SubtitleView(title: "Pick the line join type")
                         Picker("Choose line cap join type", selection: $selectedLineJoin) {
                             ForEach(Constant.lineJoinTypes, id: \.self) { lineCap  in
                                 Text(lineCap.name)
@@ -78,7 +68,7 @@ struct LineChartView: View {
                     
                     
                     VStack(alignment: .leading, spacing: 5) {
-                        TitleView(title: "Pick the line width")
+                        SubtitleView(title: "Pick the line width")
                         Picker("Choose line width", selection: $selectedLineWidth) {
                             ForEach(1...19, id: \.self) { width  in
                                 Text("\(width)")
@@ -88,7 +78,7 @@ struct LineChartView: View {
                     
                     
                     VStack(alignment: .leading, spacing: 5) {
-                        TitleView(title: "Choose the ⭐️ Annotation Position")
+                        SubtitleView(title: "Choose the ⭐️ Annotation Position")
                         Picker("Choose Annotation Position", selection: $selectedAnnotationPosition) {
                             ForEach(Constant.annotationPosition, id: \.self) { position  in
                                 Text(position.name)
@@ -97,7 +87,7 @@ struct LineChartView: View {
                     }.padding(.horizontal, 5)
                     
                     VStack(alignment: .leading, spacing: 5) {
-                        TitleView(title: "Choose the symbol shape")
+                        SubtitleView(title: "Choose the symbol shape")
                         Picker("Choose the symbol", selection: $selectedSymbolShape) {
                             ForEach(Constant.symbolShape, id: \.self) { symbol  in
                                 Text(symbol.name)
@@ -122,14 +112,15 @@ struct LineChartView: View {
                         .symbol(selectedSymbolShape.type)
                     }
                     .interpolationMethod(selectedInterpolationMethod.type)
-                }.frame(height: 200)
-                
-                    .environment(\.colorScheme, .dark)
+                }.frame(height: 100)
+                Spacer()
+                  
             }
             
         }
+        .environment(\.colorScheme, .dark)
     }
-    
+     
     
 }
 
