@@ -11,7 +11,7 @@ import SwiftUI
 struct ChartProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainScreenView()
         }
     }
 }

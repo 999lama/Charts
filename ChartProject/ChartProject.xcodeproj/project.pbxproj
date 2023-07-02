@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		CEC1D1AC2A51B5FB00B1107C /* ChartProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1AB2A51B5FB00B1107C /* ChartProjectApp.swift */; };
-		CEC1D1AE2A51B5FB00B1107C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1AD2A51B5FB00B1107C /* ContentView.swift */; };
+		CEC1D1AE2A51B5FB00B1107C /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1AD2A51B5FB00B1107C /* MainScreenView.swift */; };
 		CEC1D1B02A51B5FD00B1107C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC1D1AF2A51B5FD00B1107C /* Assets.xcassets */; };
 		CEC1D1B32A51B5FD00B1107C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC1D1B22A51B5FD00B1107C /* Preview Assets.xcassets */; };
+		CEC1D1BA2A51B64100B1107C /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1B92A51B64100B1107C /* Chart.swift */; };
+		CEC1D1BC2A51D27D00B1107C /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1BB2A51D27D00B1107C /* ChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEC1D1A82A51B5FB00B1107C /* ChartProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC1D1AB2A51B5FB00B1107C /* ChartProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartProjectApp.swift; sourceTree = "<group>"; };
-		CEC1D1AD2A51B5FB00B1107C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CEC1D1AD2A51B5FB00B1107C /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
 		CEC1D1AF2A51B5FD00B1107C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEC1D1B22A51B5FD00B1107C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEC1D1B92A51B64100B1107C /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
+		CEC1D1BB2A51D27D00B1107C /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				CEC1D1AB2A51B5FB00B1107C /* ChartProjectApp.swift */,
-				CEC1D1AD2A51B5FB00B1107C /* ContentView.swift */,
+				CEC1D1AD2A51B5FB00B1107C /* MainScreenView.swift */,
+				CEC1D1BB2A51D27D00B1107C /* ChartView.swift */,
+				CEC1D1B92A51B64100B1107C /* Chart.swift */,
 				CEC1D1AF2A51B5FD00B1107C /* Assets.xcassets */,
 				CEC1D1B12A51B5FD00B1107C /* Preview Content */,
 			);
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEC1D1AE2A51B5FB00B1107C /* ContentView.swift in Sources */,
+				CEC1D1AE2A51B5FB00B1107C /* MainScreenView.swift in Sources */,
 				CEC1D1AC2A51B5FB00B1107C /* ChartProjectApp.swift in Sources */,
+				CEC1D1BA2A51B64100B1107C /* Chart.swift in Sources */,
+				CEC1D1BC2A51D27D00B1107C /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
